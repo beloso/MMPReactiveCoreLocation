@@ -1,5 +1,9 @@
 # MMPReactiveCoreLocation CHANGELOG
 
+## 0.7.0
+
+* Updated to newer, more up to date ReactiveObjC dependency
+
 ## 0.6.2
 
 * Added: Beacon ranging signal.
