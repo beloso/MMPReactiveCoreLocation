@@ -7,7 +7,7 @@
 //
 
 #import "MMPReactiveCoreLocation.h"
-#import <ReactiveCocoa/RACEXTScope.h>
+#import <ReactiveObjC/RACEXTScope.h>
 
 #ifdef DEBUG
 #   define MMPRxCL_LOG(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
@@ -338,7 +338,7 @@ typedef NS_ENUM(NSInteger, MMPLocationServiceType) {
                     filter:^BOOL(NSError *error) {
                         return error.code != kCLErrorLocationUnknown;
                     }]
-                    flattenMap:^RACStream *(NSError *error) {
+                    flattenMap:^RACSignal *(NSError  * error) {
                         return [RACSignal error:error];
                     }];
 }

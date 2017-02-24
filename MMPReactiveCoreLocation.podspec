@@ -16,14 +16,15 @@ Pod::Spec.new do |s|
                        DESC
   s.homepage         = "https://github.com/mpurbo/MMPReactiveCoreLocation"
   s.license          = 'MIT'
-  s.author           = { "Mamad Purbo" => "m.purbo@gmail.com" }
+  s.author           = { "Mamad Purbo" => "m.purbo@gmail.com",
+                         "Tiago Veloso" => "tiago.veloso@cashyt.com" }
   s.source           = { :git => "https://github.com/mpurbo/MMPReactiveCoreLocation.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/purubo'
 
   s.platform         = :ios
-  s.ios.deployment_target = '7.0'
+  s.ios.deployment_target = '8.0'
   s.source_files     = 'Classes'
   s.framework        = 'CoreLocation', 'CoreBluetooth'
-  s.dependency 'ReactiveCocoa'
+  s.dependency 'ReactiveObjC'
   s.requires_arc     = true    
 end

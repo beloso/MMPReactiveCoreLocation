@@ -1,2 +1,7 @@
-platform :ios, '8.1'
-pod "MMPReactiveCoreLocation", :path => "../../"
+platform :ios, "8.1"
+
+target "SimpleReactiveCoreLocation" do
+
+  pod "MMPReactiveCoreLocation", :path => "../../"
+
+end
